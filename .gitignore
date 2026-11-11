@@ -1,0 +1,38 @@
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+artifacts/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.cache
+
+# Visual Studio Code
+.vscode/
+
+# Rider
+.idea/
+
+# NuGet
+*.nupkg
+**/packages/
+
+# Logs
+*.log
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+appsettings.*.json
+
+# OS files
+.DS_Store
+Thumbs.db
