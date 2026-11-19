@@ -1,21 +1,20 @@
-﻿using E_Commerce.Domain.Common;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace E_Commerce.Domain.Entities.Products
 {
-    public class Product : BaseEntity<int>
+    public class Product : BaseEntity
     {
-        public string Name { get; set; } = null!;
-        public string Description { get; set; } = null!;
-        public string PictureUrl { get; set; } = null!;
-        public decimal Price { get; set; }
+        public string Name { get; private set; } = null!;
+        public string Description { get; private set; } = null!;
+        public string PictureUrl { get; private set; } = null!;
+        public decimal Price { get; private set; }
 
-        public int ProductBrandId { get;  set; }
-        public ProductBrand ProductBrand { get; set; } = null!;
+        public Guid ProductBrandId { get; private set; }
+        public ProductBrand ProductBrand { get; private set; } = null!;
 
-        public int ProductTypeId { get; set; }
-        public ProductType ProductType { get; set; } = null!;
+        public Guid ProductTypeId { get; private set; }
+        public ProductType ProductType { get; private set; } = null!;
     }
 }

@@ -1,6 +1,4 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-
-namespace E_Commerce.API
+﻿namespace E_Commerce.API
 {
     public static class DependancyInjection
     {

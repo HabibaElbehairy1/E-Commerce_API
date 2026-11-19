@@ -10,7 +10,7 @@ namespace E_Commerce.API
 
             builder.Services.AddOpenApi();
 
-            builder.Services.AddInfrastructure();
+            builder.Services.AddInfrastructure(builder.Configuration);
             builder.Services.AddApplication();
             builder.Services.AddPresentation();
 

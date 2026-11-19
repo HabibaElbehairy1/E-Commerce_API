@@ -1,13 +1,13 @@
-﻿using E_Commerce.Domain.Common;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace E_Commerce.Domain.Entities.Products
 {
-    public class ProductBrand : BaseEntity<int>
+    public class ProductBrand : BaseEntity
     {
-        public string Name { get; set; } = null!;
+        public string Name { get; private set; } = null!;
+        public ICollection<Product> Products { get; private set; } = [];
 
     }
 }

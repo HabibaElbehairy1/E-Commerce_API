@@ -2,7 +2,7 @@
 
 namespace E_Commerce.Application
 {
-    public static class InfrastructureServicesRegistration
+    public static class DependencyInjection
     {
         public static IServiceCollection AddApplication(this IServiceCollection services ) 
         {
